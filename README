@@ -1,0 +1,79 @@
+miscom v1.0 - defend cities from missile attack.
+Copyright (C) 1995-6 Graham Richards.
+Documentation and some other changes by Russell Marks.
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or (at
+your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+
+Description
+-----------
+
+In miscom you must defend cities from missile attack. You do this by
+launching missiles of your own (in a point-and-blast fashion) to
+destroy the enemy missiles before they land.
+
+Miscom is a curses-based game, so it should work on any terminal.
+(You'll need 9600 baud or better for it to be playable.) It supports
+colour and sound.
+
+
+Installation
+------------
+
+You should only need a Unix box with usleep() to run miscom, but I've
+only tested it on Linux. You need an ANSI C compiler too (like gcc).
+
+Edit the Makefile as required, then do `make'. As usual, `make
+install' installs it after you've compiled - this also installs the
+sound files.
+
+
+History
+-------
+
+Graham sent me a copy of miscom in early 1996, and I was pretty
+impressed with it. (He'd been wanting something to write, and I
+semi-jokingly suggested he write a curses missile-command clone, so I
+was more than a little surprised that he'd actually gone and done it.
+I don't think he'd written any real-time games before.) I figured he'd
+want more than just us two to play it, so I asked if I should upload
+it if I ever got the chance, and he agreed. I've since lost contact
+with him, but in true share-and-enjoy spirit, here it is. I added
+colour and sound support, wrote the man page, and cleaned up the code
+a little - well, enough to more-or-less get it through `-Wall' :-) -
+but other than that it's very much Graham's.
+
+
+Contacting the author
+---------------------
+
+As I said above, I've lost contact with Graham, but as I'm maintaining
+miscom you could write to me about it.
+
+No email address at the moment I'm afraid. :-(
+
+Postal address:
+		Russell Marks,
+		3 Rapley Close,
+		Camberley,
+		Surrey,
+		GU15 4ER,
+		United Kingdom.
+
+If you insist on abbreviating my name, please use "R. J. Marks".
+
+
+Have fun,
+-Rus.

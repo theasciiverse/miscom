@@ -1,0 +1,19 @@
+Thu Jan 22 16:33:05 1998  Russell Marks  <rus@lifeson>
+
+	* Fixed bug relating to levels. (The arrays in level.c weren't
+	fully initialised, which broke some code in main.c.)
+
+Sat Mar 15 20:59:48 1997  Russell Marks  <rus@lifeson>
+
+	* Added sound, ripped from zblast (the sounds are mostly different
+ 	though).
+
+Sat Mar 15 02:19:38 1997  Russell Marks  <rus@lifeson>
+
+	* Wrote man page.
+
+	* Made it so you don't just get one go per invocation. (That might
+	work for nethack but it doesn't feel right for an arcade game.)
+
+	* Cleanup operation. :-) Tried to move extern decls into header
+	files, remove debug stuff, etc.

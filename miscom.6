@@ -1,0 +1,99 @@
+.\" -*- nroff -*-
+.\"
+.\" miscom - defend cities from missile attack.
+.\" Copyright (C) 1995-6 Graham Richards.
+.\" Documentation and some other changes by Russell Marks.
+.\"
+.\" This program is free software; you can redistribute it and/or modify
+.\" it under the terms of the GNU General Public License as published by
+.\" the Free Software Foundation; either version 2 of the License, or (at
+.\" your option) any later version.
+.\"
+.\" This program is distributed in the hope that it will be useful, but
+.\" WITHOUT ANY WARRANTY; without even the implied warranty of
+.\" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+.\" General Public License for more details.
+.\"
+.\" You should have received a copy of the GNU General Public License
+.\" along with this program; if not, write to the Free Software
+.\" Foundation, 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+.\"
+.\"
+.\" miscom.6 - nroff -man source for miscom man page.
+.\"
+.\"
+.\"
+.TH MISCOM 6 "15th March, 1997" "Version 1.0" "Games"
+.\"
+.\"------------------------------------------------------------------
+.\"
+.SH NAME
+miscom \- defend cities from missile attack (curses game)
+.\"
+.\"------------------------------------------------------------------
+.\"
+.SH SYNOPSIS
+.B miscom
+.\"
+.\"------------------------------------------------------------------
+.\"
+.SH DESCRIPTION
+In miscom you must defend cities from missile attack. You do this by
+launching missiles of your own (in a point-and-blast fashion) to
+destroy the enemy missiles before they land.
+.PP
+The enemy's missiles are either normal missiles or `smart' ones which
+attempt to avoid explosions. (Both look the same.) Further missiles
+may be launched at low-level by an enemy plane. (Indicated by the
+terminal's cursor; it's a bit weird, but you'll know it when you see
+it.) Some missiles may split into multiple warheads. This is extremely
+nasty, so watch out for it.
+.PP
+You have three bases which can launch missiles. When you press fire to
+launch a missile at the current cursor position, the closest base to
+the target (with ammo remaining) launches it. Ammo remaining is
+indicated under each base. Note that bases can be blown up too - but
+unlike cities, these are restored at the start of the next level.
+.PP
+Lose all the cities and it's game over (though only after the current
+level has finished). There are no bonus cities.
+.\"
+.\"------------------------------------------------------------------
+.\"
+.SH KEYS
+Use h/j/k/l to move left/down/up/right. Space fires. P pauses the
+game.
+.\"
+.\"------------------------------------------------------------------
+.\"
+.SH "HINTS AND TIPS"
+You can use the explosion from one enemy missile to destroy another -
+chaining explosions together like this is the key to not running out
+of ammo. Tricky to do under pressure though.
+.PP
+It's probably best to tap the movement buttons N times to move rather
+than holding them down.
+.\"
+.\"------------------------------------------------------------------
+.\"
+.SH BUGS
+There are some display glitches. Hopefully they don't get in the way
+of the gameplay. Some of them are intentional to try and keep the
+speed up on slower terminals, but not all can be excused like this.
+.PP
+There aren't any hi-scores.
+.PP
+The title screen is crap. Sorry. :-)
+.PP
+There may be other bugs, but I've tested it a fair bit and it seems to
+work well enough.
+.PP
+The level numbering starting at zero is, ISTR, not a bug.
+.\"
+.\"------------------------------------------------------------------
+.\"
+.SH AUTHOR
+Graham Richards.
+.PP
+Russell Marks cleaned it up a bit, added colour and sound, and wrote
+this man page and other documentation.

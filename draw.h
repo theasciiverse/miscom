@@ -1,0 +1,13 @@
+extern void wipe_area(void);
+extern int chkcoords(int x,int y);
+extern void dispammo(void);
+extern void drawline(int x1,int y1,int x2,int y2,int xx,int yy,int num);
+extern void landscape(void);
+extern int setpixel(int x,int y,int num);
+extern int redrawpix(int x,int y);
+extern void drawptr(int x,int y);
+extern void undrawptr(int x,int y);
+extern void dispcities(void);
+extern int dispscore(void);
+extern void use_colour(int colnum,int other_attr);
+extern void define_colours(void);
