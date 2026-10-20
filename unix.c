@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <signal.h>
 #include <curses.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -38,11 +41,20 @@ int numalive()
 	}
 		
 
+/* set by the SIGINT handler; acted on here, where curses may be used */
+volatile sig_atomic_t quit_requested=0;
+
+void request_quit(int sig)
+	{
+	quit_requested=1;
+	}
+
 unsigned char getnbkey()
 	{
 	unsigned char red;
 	int ret;
 	
+	if (quit_requested) bombout();
 	ret=read(keyptr,&red,1); 
 
 	if (ret==-1)

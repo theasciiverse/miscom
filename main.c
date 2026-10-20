@@ -454,7 +454,7 @@ int main()
 		fprintf(stderr,"Couldn't open /dev/tty."),bombout();
 	
 	srandom(time(NULL));
-	signal(SIGINT,bombout);
+	signal(SIGINT,request_quit);
 	
 	start_sndserv();
 	
