@@ -55,7 +55,14 @@ unsigned char getnbkey()
 	int ret;
 	
 	if (quit_requested) bombout();
+#ifdef AV_BUILD
+	/* through curses: arrow keys, Windows, and resizing */
+	ret=av_getkey();
+	red=ret;
+	if (ret==0) ret=-1;
+#else
 	ret=read(keyptr,&red,1); 
+#endif
 
 	if (ret==-1)
 		{

@@ -450,8 +450,10 @@ int main()
 	cbreak(); noecho();
 	define_colours();
 	
+#ifndef AV_BUILD
 	if((keyptr=open("/dev/tty",O_RDONLY|O_NONBLOCK))<0)
 		fprintf(stderr,"Couldn't open /dev/tty."),bombout();
+#endif
 	
 	srandom(time(NULL));
 	signal(SIGINT,request_quit);
