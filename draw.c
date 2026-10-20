@@ -237,7 +237,9 @@ int redrawpix(int x,int y)
 
 int chkcoords(int x,int y)
 	{
-	if ( (x>-1)&&(x<=MAX_X)&&(y>-1)&&(y<=MAX_Y) )	
+	/* y stops below MAX_Y: Screen has MAX_Y half-rows, and row MAX_Y/2
+	 * is the cities' */
+	if ( (x>-1)&&(x<=MAX_X)&&(y>-1)&&(y<MAX_Y) )	
 		{
 		return(0);
 		}
