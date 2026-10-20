@@ -55,7 +55,7 @@ void lev_complete()
 
 	use_colour(COLOR_CYAN,A_BOLD);
 
-	sprintf(tempstring,"You have completed level %i",Level);
+	sprintf(tempstring,"You have completed level %i",Level+1);
 	centre(tempstring,5);
 
 	move(1,1);
