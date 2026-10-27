@@ -68,3 +68,9 @@ keys, resizing; sound through aplay, the sound process and aplay ending
 when the game is killed. AddressSanitizer and UBSan clean over
 random-key and resize soaks after the fix above. Windows: cross-built
 and run under Wine (a level played). macOS: not built here.
+
+## Ours
+
+- **How to play it, at the top of README.** A short note on installing and
+  starting it with av, or from a release archive; the original text follows
+  unchanged.
